@@ -176,10 +176,10 @@ window.title("News Screener")
 window.geometry("600x380")
 
 
-day = Label(window, text="Day", font=("Arial", 45))
+day = Label(window, text="Stock", font=("Arial", 45))
 trading = Label(window, text="Trading", font=("Arial", 45))
 news = Label(window, text="News", font=("Arial", 45))
-scanner = Label(window, text="Scanner", font=("Arial", 45))
+scanner = Label(window, text="Screener", font=("Arial", 45))
 
 
 day.place(x = 50, y=57)
@@ -191,10 +191,10 @@ scanner.place(x = 50, y=252)
 vertical =Frame(window, bg='#242424', height=280,width=1)
 vertical.place(x=300, y=50)
 
-start = Button(window, text="Run Scanner", command=startButton, font=('Arial', 13))
+start = Button(window, text="Run Screener", command=startButton, font=('Arial', 13))
 start.place(x=330, y=60)
 
-stop = Button(window, text="Stop Scanner", command=stopButton, font=('Arial', 13))
+stop = Button(window, text="Stop Screener", command=stopButton, font=('Arial', 13))
 stop.place(x=450, y=60)
 
 
