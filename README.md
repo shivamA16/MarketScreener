@@ -2,7 +2,7 @@
 
 **What is it?**
 
-This news screener, programmed in python, runs a web-scraping algorithm that continuously scans three major stocks-related sites - 'Globenewswire', 'Businesswire', and 'Accesswire'.
+This news screener, programmed in python, runs a web-scraping algorithm that continuously scans two major stocks-related sites - 'Globenewswire', and  'Businesswire'.
 The algorithm scans for relevant keywords in headlines of news articles, and if any the keywords are found in a headline, it is shown as a system notification on the computer. The notifications can then be clicked, which will lead the user directly to the news article. The algorithm screens for news
 every two seconds using web-scraping and uses the tkinter module in python for the GUI. 
 
