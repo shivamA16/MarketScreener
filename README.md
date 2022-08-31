@@ -1,4 +1,4 @@
-# **Stock News Screener - iOS**
+# **Stock News Screener - MacOS**
 
 **What is it?**
 
