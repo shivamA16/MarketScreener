@@ -150,7 +150,6 @@ def loadButton():
 
 
 t1 = Thread(target=main)
-# t2 = Thread(target=quit)
 lock = Lock()
 
 
