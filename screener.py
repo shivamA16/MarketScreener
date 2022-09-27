@@ -60,11 +60,9 @@ def main():
             list_of_a_globenewswire = soup_globenewswire.findAll('a', {'data-autid': 'article-url'})
             list_of_a_businesswire = soup_businesswire.findAll('a', {'class': 'bwTitleLink'})
             
-            # list_of_a_accesswire = soup_accesswire.findAll('a', {'data-uw-styling-context': 'true'})
-            # print(list_of_a_accesswire)
             
             total_list_of_a = list_of_a_businesswire +  list_of_a_globenewswire 
-            # + list_of_a_accesswire
+
             
                 
             for a in list_of_a_globenewswire:
@@ -72,11 +70,7 @@ def main():
                 links.append(link)
                 headlines.append(a.text.lower())
                 
-            # for a in list_of_a_accesswire:
-            #     link = a.get('href')
-            #     links.append(link)
-            #     print(link)
-            #     headlines.append(a.text.lower())
+
   
                 
             for a in list_of_a_businesswire:
@@ -121,12 +115,6 @@ def startButton():
     counter = 1
 
 
-# def quit():
-#     # global pressed
-#     # pressed = True
-#     lock.acquire()
-
-
 def stopButton():
     lock.acquire()
     print("Program stopped")
@@ -168,7 +156,6 @@ lock = Lock()
 
 stem_globenewswire = 'https://www.globenewswire.com'
 stem_businesswire = 'https://www.businesswire.com'
-# stem_accesswire = 'https://www.accesswire.com/'
 
 headlines_shown = []
 links_shown = []
