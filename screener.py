@@ -107,7 +107,7 @@ def main():
         print('Done')
         print(keywords)
         lock.release()
-        sleep(2)
+        sleep(3)
     
 
 
